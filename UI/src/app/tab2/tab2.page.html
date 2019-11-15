@@ -1,0 +1,56 @@
+
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Farmer Insurance App
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content class="marginTop">
+    <ion-list>
+      </ion-list>
+  <form  #form="ngForm" (ngSubmit)="register(form)">
+    <ion-grid>
+      <ion-row color="primary" class="ion-justify-content-center">
+        <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+          <div class="ion-text-center">
+            <h3>{{ 'CREATE YOUR ACCOUNT' | translate }}</h3>
+          </div>
+          <div class="ion-padding">
+             
+            <ion-item>
+                
+              <ion-input  name="name" type="text" placeholder="{{ 'NAME' | translate }}" ngModel required></ion-input>
+            </ion-item>
+            <br>
+            <ion-item>
+              
+              <ion-input name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
+            </ion-item>
+            <br>
+            <ion-item>
+                
+              <ion-input name="password" type="password" placeholder="{{ 'PASSWORD' | translate }}" ngModel required></ion-input>
+            </ion-item>
+            <br>
+            <ion-item>
+                
+              <ion-input name="confirm" type="password" placeholder="{{ 'CONFIRM PASSWORD' | translate }}" ngModel required></ion-input>
+            </ion-item>
+            <br>
+            <ion-item>
+               
+                <ion-select placeholder="{{ 'ROLE' | translate }}" ngModel name="role">
+                  <ion-select-option value="farmer">{{ 'FARMER' | translate }}</ion-select-option>
+                  <ion-select-option value="verificationOfficer">{{ 'VERIFICATION OFFICER' | translate }}</ion-select-option>
+                </ion-select>
+              </ion-item>
+          </div>
+          <div class="ion-padding">
+            <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="block">{{ 'REGISTER' | translate }}</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

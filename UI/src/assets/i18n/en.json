@@ -1,0 +1,18 @@
+{
+    "LOGIN": "Login",
+    "REGISTER":"Register",
+    "NAME":"Name",
+    "PASSWORD":"Password",
+    "EMAIL":"Email",
+    "CONFIRM PASSWORD":"Confirm Password",
+    "FARMER":"Farmer",
+    "ROLE":"Role",
+    "CREATE YOUR ACCOUNT":"Create Your Account",
+    "VERIFICATION OFFICER":"Verification Officer",
+    "DASHBOARD":"Dashboard",
+    "PROFILE":"Profile",
+    "CLAIMS":"Insurance Claims",
+    "FORGOT PASSWORD":"Forgot Password",
+    "DETAILS":"Personal Details"
+ 
+}

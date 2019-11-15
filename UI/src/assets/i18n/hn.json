@@ -1,0 +1,22 @@
+{
+    "LOGIN": "साइन इन",
+    "REGISTER":"रजिस्टर",
+    "NAME":"नाम",
+    "PASSWORD":"पासवर्ड",
+    "EMAIL":"ईमेल",
+    "CONFIRM PASSWORD":"पासवर्ड की पुष्टि कीजिये",
+    "FARMER":"किसान",
+    "ROLE":"भूमिका",
+    "CREATE YOUR ACCOUNT":"अपना अकॉउंट बनाएं",
+    "VERIFICATION OFFICER":"सत्यापन अधिकारी",
+    "DASHBOARD":"डैशबोर्ड",
+    "PROFILE":"प्रोफ़ाइल",
+    "CLAIMS":"बीमा दावा",
+    "FORGOT PASSWORD":"पासवर्ड भूल गए",
+    "DETAILS":"व्यक्तिगत विवरण"
+    
+ 
+ 
+
+
+}

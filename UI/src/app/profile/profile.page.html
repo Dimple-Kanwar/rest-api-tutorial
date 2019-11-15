@@ -1,0 +1,47 @@
+
+  <ion-toolbar>
+    <ion-title align='center'>profile</ion-title>
+  </ion-toolbar>
+
+
+<ion-content >
+    <ion-grid>
+        <ion-row color="primary" class="ion-justify-content-center">
+          <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+  <ion-item>
+  <ion-label>NAME</ion-label>
+  <ion-input value="{{farmer.name}}" readonly align='end'></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>EMAIL</ion-label>
+  <ion-input value="{{farmer.email}}" readonly align='end'></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>PHONE NO.</ion-label>
+  <ion-input value="{{farmer.phone}}" readonly align='end'></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>ADDRESS</ion-label>
+  <ion-input value="{{farmer.address}}" readonly align='end'></ion-input>
+</ion-item>
+
+  <ion-item><ion-label>FARMS  
+  </ion-label>
+  <button   class="ion-button clear" align='end'><ion-icon name="add-circle"></ion-icon> </button>
+</ion-item> 
+  <ion-list *ngFor="let type of farmlist">
+      
+  <ion-item>
+     
+  <ion-list-header >{{ type }}</ion-list-header>
+  <ion-item-sliding *ngFor="let client of farms[type]"> 
+      <ion-item>{{ client }}</ion-item>
+    </ion-item-sliding>
+  </ion-item>
+  </ion-list>
+  
+
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{'FARMER'|translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="dashboard">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>{{ 'DASHBOARD' | translate }} </ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="claims">
+        <ion-icon name="create"></ion-icon>
+        <ion-label>{{ 'CLAIMS' | translate }} </ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="profile">
+        <ion-icon name="contact"></ion-icon>
+        <ion-label>{{ 'PROFILE' | translate }} </ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  
+  </ion-tabs>
+</ion-content>
+
